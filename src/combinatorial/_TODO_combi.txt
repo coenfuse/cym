@@ -1,0 +1,143 @@
+Sorting is ordering a list of objects. There are two types of sorting. If the number
+of objects is small enough to fits into the main memory is called internal sorting.
+If the number of objects is so large that some of them reside on external storage
+during the sort is called external sorting. This section contains C++ programs on
+implementing internal sorting algorithms like bucket sort, bubble sort, insertion
+sort, selection sort, heapsort and mergesort. this section also provides
+implementation on other sorting like radix, stooge, shaker, quick and shell
+sort.
+
+C++ Program to Implement Radix Sort
+C++ Program to Implement Bucket Sort
+C++ Program to Implement Bubble Sort
+C++ Program to Implement Heap Sort
+C++ Program to Implement Merge Sort
+C++ Program to Implement Selection Sort
+C++ Program to Implement Insertion Sort
+C++ Program to Implement Quick Sort Using Randomization
+C++ Program to Implement Shell Sort
+C++ Program to Implement Sorting of Less than 100 Numbers in O(n) Complexity
+C++ Program to Perform Sorting Using B-Tree
+C++ Program to Perform Quick Sort on Large Number of Elements
+C++ Program to Implement Merge Sort Algorithm on Linked List
+C++ Program to Implement Counting Sort
+C++ Program to Perform the Shaker Sort
+C++ Program to Perform Stooge Sort
+C++ Program to Count Inversion in an Array
+
+Searching is an operation or a technique that helps to finds the place of a
+given element or value in the list. Most commonly used searching technique are
+linear search or sequential search and binary search. It performs searching using
+self-organizing lists, reference and uniform binary search, This section contain
+C++ programs that implement searching algorithms like binary search interpolation
+algorithms. This section also contains a program to find the largest element,
+minimum and maximum number in an array or sequence using linear and binary
+search.
+
+C++ Program to Compare Binary and Sequential Search
+C++ Program to Perform Searching Using Self-Organizing Lists
+C++ Program to Implement a Binary Search Algorithm for a Specific Search Sequence
+C++ Program to Search for an Element in a Binary Search Tree
+C++ Program to Implement Multi-Threaded Version of Binary Search Tree
+C++ Program to Perform Searching Based on Locality of Reference
+C++ Program to Implement Interpolation Search Algorithm
+C++ Program to Find kth Largest Element in a Sequence
+C++ Program to Search Sorted Sequence Using Divide and Conquer with the Aid of Fibonacci Numbers
+C++ Program to Perform Uniform Binary Search
+C++ Program to Find Minimum Element in an Array using Linear Search
+C++ Program to Find Maximum Element in an Array using Binary Search
+C++ Program to Find the Minimum element of an Array using Binary Search approach
+C++ Program to Find the peak element of an array using Binary Search approach
+
+Selection sort algorithm sort data by comparing one element to every other element
+and decide its position. Binary search is an algorithm used to search for an
+element in a sorted array. In this algorithm the targeted element is compared with
+middle element. Naive string matching algorithm is used to find all the occurrence
+of a given pattern in a given string. The programs compute median and mode of
+different elements in an array, implementation of quick sort with given complexity
+constraint, This section contains C++ programs to find the largest element, smallest
+number and median using binary search approach and naive method.
+
+C++ Program to Find Second Smallest of n Elements with Given Complexity Constraint
+C++ Program to Implement Quick Sort with Given Complexity Constraint
+C++ Program to List the kth Quantiles of a Set within Given Time Constraint
+C++ Program to Find k Numbers Closest to Median of S, Where S is a Set of n Numbers
+C++ Program to Find Median of Elements where Elements are Stored in 2 Different Arrays
+C++ Program to Find ith Largest Number from a Given List Using Order-Statistic Algorithm
+C++ Program to Find kth Smallest Element by the Method of Partitioning the Array
+C++ Program to Find the Mode in a Data Set
+C++ Program to Find the Number of occurrences of a given Number using Binary Search approach
+C++ Program to Find the median of two Sorted arrays using Binary Search approach
+C++ Program to Find the maximum subarray sum O(n^2) time(naive method)
+C++ Program to Find the maximum subarray sum using Binary Search approach
+
+Heap’s algorithm generates all possible permutations of n objects.
+Matrix Multiplication multiplies two matrices and prints the result.
+This section contains C++ programs to compute combinations using factorials,
+recurrence relation for nCr and matrix multiplication, implementation of heaps
+and alexander bogomolny’s unordered permutation algorithm. program to generate
+all possible combinations of lists, program to find number of permutations in a
+given string.
+
+C++ Program to Implement the Alexander Bogomolny’s UnOrdered Permutation Algorithm for Elements From 1 to N
+C++ Program to Permute All Letters of an Input String
+C++ Program to Implement Heap’s Algorithm for Permutation of N Numbers
+C++ Program to Generate All Possible Combinations of a Given List of Numbers
+C++ Program to Generate a Sequence of N Characters for a Given Specific Case
+C++ Program to Compute Combinations using Factorials
+C++ Program to Compute Combinations using Recurrence Relation for nCr
+C++ Program to Compute Combinations using Matrix Multiplication
+C++ Program to Find the Number of Permutations of a Given String
+
+A lexicographical comparison is the kind of comparison generally used to sort words
+alphabetically in dictionaries. Gray, is an ordering of the binary numeral system such
+that two successive values differ in only one bit. This section contains C++ programs
+to generate subsets in gray code and lexico graphic order, random and all possible
+subsets by coin flipping and k elements, implementation of binary counting method.
+
+C++ Program to Generate All Subsets of a Given Set in the Gray Code Order
+C++ Program to Generate All Subsets of a Given Set in the Lexico Graphic Order
+C++ Program to Implement the Binary Counting Method to Generate Subsets of a Set
+C++ Program to Generate a Random Subset by Coin Flipping
+C++ Program to Generate All Possible Subsets with Exactly k Elements in Each Subset
+C++ Program to Generate All Possible Combinations Out of a,b,c,d,e
+C++ Program to Generate All Pairs of Subsets Whose Union Make the Set
+C++ Program to Generate All Sequences out of a Binary Sequence without Altering 0 Positions while Changing 1
+
+The C++ programs in this section generates random and set partitions, program to
+find the number of ways to partition a word to check word is palindrome and integer
+partition for a specific case.
+
+C++ Program to Perform integer Partition for a Specific Case
+C++ Program to Generate All the Set Partitions of n Numbers Begining from 1 and so on
+C++ Program to Generate Random Partition out of a Given Set of Numbers or Characters
+C++ Program to Find the Number of Ways to Write a Number as the Sum of Numbers Smaller than Itself
+C++ Program to Find number of Ways to Partition a word such that each word is a Palindrome
+
+Random Edge Selection algorithm takes the input of the number of vertexes and edges
+of the graph. It connects vertexes randomly and generates cyclic, acyclic or
+disconnected undirected graphs. Random Edge Generation algorithm generates a undirected
+random graph for some random number of edges and vertexes. Adjacency Matrix is a
+2D array of size V x V where V is the number of vertices in a graph. An adjacency list
+represents a graph as an array of linked list. This section contains C++ programs
+on generating graphs using adjacency matrix, incidence matrix, 2d arrays, linked lists,
+adjacency and incidence list, random undirected graph and random directed acyclic graph,
+program to create prufer code for trees and random graph using random edge generation.
+
+C++ Program to Generate a Random UnDirected Graph for a Given Number of Edges
+C++ Program to Generate a Random Directed Acyclic Graph DAC for a Given Number of Edges
+C++ Program to Create a Random Graph Using Random Edge Generation
+C++ Program to Construct a Random Graph by the Method of Random Edge Selection
+C++ Program to Construct a Random Graph by the Method of Preferencial Attachment
+C++ Program to Create the Prufer Code for a Tree
+C++ Program to Generate a Graph for a Given Fixed Degree Sequence
+C++ Program to Generate a Semi-Random Collection of Graphs by Using the Technique of Edge-Flipping
+C++ Program to Check if any Graph is Possible to be Constructed for a Given Degree Sequence
+C++ Program to Represent Graph Using Adjacency Matrix
+C++ Program to Represent Graph Using Incidence Matrix
+C++ Program to Represent Graph Using Adjacency List
+C++ Program to Represent Graph Using Incidence List
+C++ Program to Represent Graph Using 2D Arrays
+C++ Program to Represent Graph Using Linked List
+
+C++ program to Solve Tower of Hanoi Problem using Binary Value

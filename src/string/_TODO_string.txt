@@ -1,0 +1,50 @@
+C++ Program to Find the Smallest Set of Vertices that will Cover Each Edge atleast once
+C++ Program to Find an Optimal Solution for Set Cover Problem Using Backtracking
+C++ Program to Use Integer Programming Formula to Solve the Set Cover Problem
+C++ Program to Solve Set Cover Problem assuming at max 2 Elements in a Subset
+C++ Program to Implement Boolean Logic Minimization Using Set Cover Problem
+C++ Program to Use Greedy Approach to Solve Set Cover Problem
+C++ Program to Implement Exhaustive Search Algorithm for Set Packing
+C++ Program to Implement Heuristic Approach to Solve Set Packing
+C++ Program to Check if a Set Packing is Possible of Size k for a Given Pair of Universe U and a Family S of Subsets of U (U,S)
+C++ Program to Implement the String Search Algorithm for Short Text Sizes. (This C++ program performs naive string matching without using any specific library functions. A text and a pattern is given as input. The pattern is searched for in the text and all instances of the pattern are given as output.)
+C++ Program to Implement Knuth–Morris–Pratt Algorithm (KMP)
+C++ Program to Implement Z Algorithm for String Matching
+C++ Program to Implement Boyer-Moore Algorithm for String Matching
+C++ Program to Repeatedly Search the Same Text (such as Bible by building a Data Structure)
+C++ Program to Implement Aho-Corasick Algorithm for String Matching
+C++ Program to Implement the Program Used in grep/egrep/fgrep
+C++ Program to Implement Rabin-Karp Method for String Matching
+C++ Program to Perform Naive String Matching
+C++ Program to Perform Finite State Automaton based Search
+C++ Program to Implement Bitap Algorithm for String Matching
+C++ Program to Implement Commentz-Walter Algorithm
+C++ Program to Implement Zhu–Takaoka String Matching Algorithm
+C++ Program to Perform String Matching Using String Library
+C++ Program to Implement String Matching Using Vectors
+C++ Program to Use Dynamic Programming to Solve Approximate String Matching
+C++ Program to Implement Bit Parallel Algorithm for approximate String Matching
+C++ Program to Implement Hirschberg’s Clever Recursive Algorithm
+C++ Program to Implement Brute-Force Approach for Approximate String Matching
+C++ Program to Implement Levenshtein Distance Computing Algorithm
+C++ Program to Implement Wagner and Fisher Algorithm for online String Matching
+C++ Program to Implement Caesar Cypher
+C++ Program to Enode a Message Using Playfair Cipher
+C++ Program to Decode a Message Encoded Using Playfair Cipher
+C++ Program to Implement the One Time Pad Algorithm
+C++ Program to Implement the MD5 Algorithm
+C++ Program to Implement the RSA Algorithm
+C++ Program to Implement the Checksum Method for Small String Messages and Detect If the Received message is same as the Transmitted
+C++ Program to Implement the Monoalphabetic Cypher
+C++ Program to Implement the Hill Cypher
+C++ Program to Implement the Vigenere Cypher
+C++ Program to Perform Cryptography Using Transposition Technique
+C++ Program to Implement Affine Cipher
+C++ Program to Minimize the Number of States in a Deterministic Finite Automata
+C++ Program to Construct DFA from NFA
+C++ Program to Construct NFA for a Given Expression
+C++ Program to Implement Kadane’s Algorithm
+C++ Program to Find the Longest Subsequence Common to All Sequences in a Set of Sequences
+C++ Program to Find the Longest Increasing Subsequence of a Given Sequence
+C++ Program to Find the Longest Prefix Matching of a Given Sequence
+C++ Program to Find the Shortest Supersequence that Contains Two or more Sequences as Subsequences

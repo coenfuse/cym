@@ -1,0 +1,252 @@
+A determinant is a value associated with a square matrix. Delaunay
+triangulation algorithm to create an index list that can be used directly in
+the DirectX or OpenGL functions. Slicker algorithm assumes the usual
+mathematical convention that positive y points upwards. The following section
+contains C++ programs on Robust Geometric Primitives. It explains how to
+check whether point lies between below, above or on the line. It calculates
+cross product of two vectors, explains how to find the triangle area and
+tetrahedron volume using determinants. This section also contains programs
+on Implementation of Slicker Algorithm that avoids Triangulation, delaunay
+triangulation algorithm and Directed Segment Problems.
+
+C++ Program to Apply Above-Below-on Test to Find the Position of a Point with respect to a Line
+	For any point t (xt, yt) on the plane, its position with respect to the line L
+	connecting p and q is found by calculating the scalar s:
+	s = A xt + B yt + C
+	If s < 0, t lies in the clockwise halfplane of L; if s > 0, t lies on the
+	counter-clockwise halfplane; if s = 0, t lies on L.
+	For example, the equation of the line connecting points (2, 2) and (4, 5) is
+	-3x + 2y + 2 = 0. The point (6, 3) lies in the clockwise halfplane of this line,
+	because (-3)(6) + (2)(3) + 2 = -10. Conversely, the point (0, 5) lies in the other
+	halfplane as (-3)(0) +(2)(5) +2 = 12.
+
+C++ Program to Compute the Area of a Triangle Using Determinants
+	Formula for the area of a triangle using determinants
+	x1 y1 1
+	Area = ±1/2 x2 y2 1
+	x3 y3 1
+	The plus/minus in this case is meant to take whichever sign is needed
+	so the answer is positive (non-negative). Do not say the area is both
+	positive and negative.
+
+C++ Program to Compute the Volume of a Tetrahedron Using Determinants
+	Call the four vertices of the tetrahedron (a, b, c), (d, e, f), (g, h, i),
+	and (p, q, r). Now create a 4-by-4 matrix in which the coordinate triples
+	form the colums of the matrix, with a row of 1’s appended at the bottom:
+	a d g p
+	b e h q
+	c f i r
+	1 1 1 1
+	The volume of the tetrahedron is 1/6 times the absolute value of the matrix
+	determinant. For any 4-by-4 matrix that has a row of 1’s along the bottom,
+	you can compute the determinant with a simplification formula that reduces
+	the problem to a 3-by-3 matrix
+	a-p d-p g-p
+	b-q e-q h-q
+	c-r f-r i-r
+
+C++ Program to Find the Area of any Polygon Using Triangulation
+C++ Program to Implement Slicker Algorithm that avoids Triangulation to Find Area
+of a Polygon
+	The algorithm assumes the usual mathematical convention that positive
+	y points upwards. In computer systems where positive y is downwards
+	(most of them) the easiest thing to do is list the vertices counter-clockwise
+	using the “positive y down” coordinates. The two effects then cancel out
+	to produce a positive area.
+
+C++ Program to Use Above Below Primitive to Test Whether Two Lines Intersect
+	The above-below primitive can be used to test whether a line intersects a
+	line segment. It does iff one endpoint of the segment is to the left of the
+	line and the other is to the right. Segment intersection is similar but more
+	complicated, and we refer you to implementations described below. The decision
+	whether two segments intersect if they share an endpoint depends upon your
+	application and is representative of the problems of degeneracy.
+
+C++ Program to Check if a Point d lies Inside or Outside a Circle Defined by
+Points a, b, c in a Plane
+	 For any point t (xt, yt) on the plane, its position with respect to the
+	 circle defined by 3 points (x1, y1) , (x2, y2), (x3, y3).
+	s = (x-xt)^2 + (y-yt)^2 – r*r
+	If s < 0, t lies inside the circle; if s > 0, t lies outside the circle;
+	if s = 0, t lies on the circle.
+
+C++ Program to Apply Delaunay Triangulation Algorithm
+C++ Program to Solve the Directed Segment Problem
+C++ Program to Solve the Directed Segment Problem
+C++ Program to Compute Cross Product of Two Vectors
+	In mathematics, the cross product or vector product is a binary operation
+	on two vectors in three-dimensional space. It results in a vector that is
+	perpendicular to both and therefore normal to the plane containing them.
+
+Graham’s scan is a method of computing the convex hull of a finite set of
+points in the plane with time complexity O(n log n). Gift wrapping algorithm
+is an algorithm for computing the convex hull of a given set of points. Quick
+Hull algorithm, which is one of the easiest to implement and has a reasonable
+expected running time of O(n log n). The C++ programs in this section deals
+with the algorithms and methods to find convex hull they are graham scan algorithm,
+jarvis march, gift wrapping algorithm, quick hull algorithm, chan’s algorithm,
+prune and search methods, incremental method, divide and conquer methods.
+
+C++ Program to Implement Graham Scan Algorithm to Find the Convex Hull
+	Graham’s scan is a method of computing the convex hull of a finite
+	set of points in the plane with time complexity O(n log n).
+
+C++ Program to Implement Gift Wrapping Algorithm in Two Dimensions
+	the gift wrapping algorithm is an algorithm for computing the convex
+	hull of a given set of points. In the two-dimensional case the algorithm
+	is also known as Jarvis march, after R. A. Jarvis, who published it in 1973
+	it has O(nh) time complexity, where n is the number of points and h is the
+	number of points on the convex hull. Its real-life performance compared with
+	other convex hull algorithms is favorable when n is small or h is expected to
+	be very small with respect to n. In general cases the algorithm is outperformed
+	by many others.
+
+C++ Program to Implement Jarvis March to Find the Convex Hull
+	The idea of Jarvis’s Algorithm is simple, we start from the leftmost point
+	(or point with minimum x coordinate value) and we keep wrapping points in
+	counterclockwise direction.
+
+C++ Program to Implement Quick Hull Algorithm to Find Convex Hull
+C++ Program to Implement Chan’s Algorithm
+C++ Program to Implement Incremental Method to Find the Convex Hull
+C++ Program to Implement Divide and Conquer Method to Find the Convex Hull
+C++ Program to Implement Prune and Search Method to Find the Convex Hull
+
+Fortune’s Sweep2 is a widely used 2D code for Voronoi diagrams and Delaunay
+triangulations. The C++ programs in this section demonstrates the implementation
+of Triangulation, delaunay triangulation, triangle, sweephull for fast delaunay
+triangulation, flip algorithm for non-delaunay triangles, triangulate by adding
+to the convex-hull diagonals.
+
+C++ Program to Triangulate by Adding to the Convex-Hull Diagonals from the First Point to All of the Others
+C++ Program to Implement Delaunay Triangulation to Perform Triangulation
+C++ Program to Implement “Triangle” by Jonathan Shewchuk
+C++ Program to Implement Fortune’s Sweep2 Code
+C++ Program to Implement Flip Algorithm for Non-Delaunay Triangles
+C++ Program to Use SweepHull for Fast Delaunay Triangulation
+
+Fortune’s algorithm is a sweep line algorithm for generating a Voronoi diagram
+from a set of points in a plane using O(n log n) time and O(n) space. The
+LBG-algorithm or Lloyd’s algorithm allows clustering of vectors of any dimension.
+Bowyer-Watson algorithm is an insertion algorithm, it builds the Delaunay
+triangulation one vertex at a time. The C++ programs in this section deals with
+implementation of voronoi diagram using fortune’s, divide and conquer algorithms,
+solves voronoi diagram problems using graphs. This section also explains other
+algorithms like lloyd’s and bowyer-watson algorithms.
+
+C++ Program to Implement Voronoi Diagram Using Fortune’s Algorithm
+C++ Program to Implement Voronoi Diagram Using Divide and Conquer Algorithm
+C++ Program to Implement Lloyd’s Algorithm
+C++ Program to Implement Voronoi Diagram Problem Using Graphs
+C++ Program to Implement Bowyer-Watson Algorithm
+
+K-D Tree Search is used for organizing some number of points in a space with k
+dimensions, mainly used in range and nearest neighbor searches. Static data
+structure is an collection of data in memory that is fixed in size. Dynamic data
+set is an collection of data in memory that has the flexibility to grow in size.
+Linear Search is a method for finding a target value within a list. This section
+contains C++ programs to find the nearest neighbour using k-d tree search, voronoi
+diagram, linear search, static and dynamic data set.
+
+C++ Program to Find the Nearest Neighbour Using K-D Tree Search
+C++ Program to Find Nearest Neighbour Using Voronoi Diagram
+C++ Program to Find Nearest Neighbour for Static Data Set
+C++ Program to Find Nearest Neighbour for Dynamic Data Set
+C++ Program to Find Nearest Neighbour Using Linear Search
+
+A K-D Tree is a binary search tree where data in each node is a K-Dimensional
+point in space. The C++ programs in this section performs operations like insertion,
+searching and deletion in k-d tree and 2-dimensional k-d tree, other operations
+like range searching in 2-dimension, 1-dimensional and 3-dimensional range query.
+
+C++ Program to Construct K-D Tree for 2 Dimensional Data (assume static data)
+C++ Program to Perform Insertion in a 2 Dimension K-D Tree
+C++ Program to Perform Searching in a 2-Dimension K-D Tree
+C++ Program to Find the Node with Minimum Value (with respect to that cutting Dimension) for a Given Node, and a Cutting Dimension
+C++ Program to Perform Deletion in K-D Tree
+C++ Program to Perform 3-Dimensional Range Query
+C++ Program to Perform 1-Dimensional Range Query
+C++ Program to Perform Range Query in 2-Dimension
+C++ Program to Perform Dynamic Range Searching where Data is Dynamically Inserted or Deleted
+C++ Program to Perform Partial Key Search in a K-D Tree
+
+This section contains C++ program to find the location of points in polygon
+and k-d trees by using triangulation, k*k grid construction, three dimensions,
+slab method and trapezoidal decomposition.
+
+C++ Program to Check Whether a Given Point is in a Given Polygon
+C++ Program to Find Location of a Point by Triangulation of the Given Polygon
+C++ Program to Find Location of a Point by Constructing K*K Grid on a Given Polygon
+C++ Program to Find Location of a Point Placed in Three Dimensions Using K-D Trees
+C++ Program to Find the Point Location Using Slab Method
+C++ Program to Find Location of a Point by Trapezoidal Decomposition
+
+The C++ programs in this section performs Intersection Testing by doing sphere
+sphere, interval-interval, sphere-AABB, AABB-AABB, ray-sphere, ray-polygon and
+brute force collision detection. It also performs polygon containment testing.
+
+C++ Program to Perform Sphere Sphere Intersection Testing
+C++ Program to Perform Interval-Interval Intersection Testing
+C++ Program to Perform AABB-AABB Intersection Testing
+C++ Program to Perform Sphere-AABB Intersection Testing
+C++ Program to Perform Ray-Sphere Intersection Testing
+C++ Program to Find Ray-Polygon Intersection Point
+C++ Program to Perform Polygon Containment Test
+C++ Program to Perform Brute Force Collision Detection
+C++ Program to Check Visibility of a Point X to Y
+C++ Program to Implement Plane Sweep Algorithms for Intersection of Lines
+
+The C++ programs in this section demonstrates the implementation of First fit
+Decreasing for 1-d objects using m bins and binary tree, This section also
+contains the program to find largest rectangle area in a histogram.
+
+C++ Program to Implement First Fit Decreasing for 1-D Objects and M Bins
+	In simple terms this is bin packing algorithm for first fit technique.
+
+C++ Program to Implement First Fit Decreasing for 1-D Objects Using Binary Tree
+	
+C++ Program to Find the Minimum Area of a Rectangle to Fit N Rectangles of Different Sizes
+C++ Program to Find Largest Rectangular Area in a Histogram
+
+The C++ programs in this section performs optimal convex partitioning
+using dynamic programming and triangulation partition, This section also
+explains hertel-mehlhorn heuristic for convex decomposition.
+
+C++ Program to Implement Hertel-Mehlhorn Heuristic for Convex Decomposition Using Diagonals
+C++ Program to Delete All Lines from a Polygon such that it becomes a Convex Polygon
+C++ Program to Perform Triangulation to Partition the Polygon in Triangles
+C++ Program to Perform Optimal Convex Partitioning Using Dynamic Programming
+
+Douglas–Peucker algorithm is an algorithm for reducing the number of points in
+a curve that is approximated by a series of points. The C++ programs in this
+section deals with the implementation of chazelle’s linear time triangulation and
+douglas-peucker algorithms.
+
+C++ Program for Douglas-Peucker Algorithm Implementation
+C++ Program to Implement Chazelle’s Linear Time Triangulation Algorithm
+
+The C++ program in this section performs image comparison using housdorff.
+
+C++ Program to Perform Housdorff based Image Comparison
+
+This section contains C++ programs to find the set of legal configuration space
+points by randon sampling. Constructing visibility graph of polygonal obstacles.
+
+C++ Program to Construct a Visibility Graph of the Polygonal Obstacles
+C++ Program to Find a Set of Legal Configuration Space Points by Randon Sampling
+
+The C++ programs in this section performs degeneracy testing, duality transformation,
+insertion and intersection detection of line arrangements. It also explains how to
+check given points lie on a single lino or not. This section contains programs on
+sweepline and bresenham line algorithms.
+
+C++ Program to Perform Degeneracy Testing on a Set of n Lines
+C++ Program to Perform Insertion in a Line Arrangement
+C++ Program to Construct a Full Arrangement of n Lines
+C++ Program to Perform Intersection Detection of Line Arrangement
+C++ Program to Find a Point P that Satisfies Maximum Number of such Constraints for a Given Set of Constraints of type y<ax+b
+C++ Program to Show the Duality Transformation of Line and Point
+C++ Program to Check if a Given Set of Three Points Lie on a Single Line or Not
+C++ Program to Implement Sweepline Algorithm
+C++ Program to Solve N-Queen Problem
+

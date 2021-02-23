@@ -1,0 +1,265 @@
+Breadth-first search (BFS) is an algorithm for traversing or searching tree or graph
+data structures. Depth-first search (DFS) is an algorithm for traversing or searching
+tree or graph data structures. A set of items connected by edges. Each item is called
+a vertex or node. If the graph is undirected, the adjacency relation defined by the
+edges is symmetric. A directed acyclic graph (DAG!) is a directed graph that contains
+no cycles. A rooted tree is a special kind of DAG and a DAG is a special kind of
+directed graph. The section contains C++ programs to check the connectivity of directed
+and undirected graph using BFS & DFS, programs to solve linear equations, testing whether
+the graphs is a tree or not and also explains how to find the connected components using
+graphs. The programs in this section perform topological sort using DFS and checks for
+cycles in graphs.
+
+C++ Program to Solve any Linear Equation in One Variable
+C++ Program to Check the Connectivity of Undirected Graph Using BFS
+C++ Program to Check the Connectivity of Directed Graph Using BFS
+C++ Program to Check the Connectivity of Undirected Graph Using DFS
+C++ Program to Check the Connectivity of Directed Graph Using DFS
+C++ Program to Test Using DFS Whether a Directed Graph is Weakly Connected or Not
+C++ Program to Check Whether a Graph is Strongly Connected or Not
+C++ Program to Check if an UnDirected Graph is a Tree or Not Using DFS
+C++ Program to Check if a Directed Graph is a Tree or Not Using DFS
+C++ Program to Find the Connected Components of an UnDirected Graph
+C++ Program to Create a Minimal Set of All Edges Whose Addition will Convert it to a Strongly Connected DAG
+C++ Program to Find Strongly Connected Components in Graphs
+
+Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of
+vertices such that for every directed edge uv, vertex u comes before v in the
+ordering. Topological Sorting for a graph is not possible if the graph is not
+a DAG. It also generates random linear extension for DAG and generates all such
+possible linear extensions.
+
+C++ Program to Apply DFS to Perform the Topological Sorting of a Directed Acyclic Graph
+C++ Program to Check Whether Topological Sorting can be Performed in a Graph
+C++ Program to Create a Random Linear Extension for a DAG
+C++ Program to Generate All the Possible Linear Extensions of a DAG
+C++ Program to Remove the Edges in a Given Cyclic Graph such that its Linear Extension can be Found
+C++ Program to Check Cycle in a Graph using Topological Sort
+C++ Program for Topological Sorting in Graphs
+
+Minimum spanning tree is a subset of the edges of a connected, edge-weighted
+(un)directed graph that connects all the vertices together, without any cycles
+and with the minimum possible total edge weight. Prim’s algorithm is a greedy
+algorithm that finds a minimum spanning tree for a connected weighted undirected
+graph. Kruskal’s algorithm is a greedy algorithm in graph theory that finds a
+minimum spanning tree for a connected weighted graph. The c++ programs in this
+section to find the minimum spanning tree by applying prim’s, boruvka’s and
+kruskal’s algorithm.
+
+C++ Program to Apply the Prim’s Algorithm to Find the Minimum Spanning Tree of a Graph
+C++ Program to Apply the Kruskal’s Algorithm to Find the Minimum Spanning Tree of a Graph
+C++ Program to Use Boruvka’s Algorithm to Find the Minimum Spanning Tree
+C++ Program to Create a MST of a Set of Points Spread in Two Dimensions Using Delaunay Triangulation
+C++ Program to Give an Efficient Algorithm to Compute the Second-Best Minimum Spanning Tree of G
+C++ Program to Find MST(Minimum Spanning Tree) using Kruskal’s Algorithm
+C++ Program to Find MST(Minimum Spanning Tree) using Prim’s Algorithm
+
+Dijkstra’s algorithm is an algorithm for finding the shortest paths between
+nodes in a graph. Bellman–Ford algorithm is an algorithm that computes shortest
+paths from a single source vertex to all of the other vertices in a weighted
+digraph. Floyd–Warshall algorithm is an algorithm for finding shortest paths
+in a weighted graph with positive or negative edge weights. Johnson’s algorithm
+helps to find shortest path between given source and destination nodes. This
+section contains C++ programs to find the shortest path by using dijkstra’s
+algorithm, bellmanford algorithm, floyd-warshall algorithm and johnson’s
+algorithm.
+
+C++ Program to Find the Shortest Path Between Two Vertices Using Dijkstra’s Algorithm
+C++ Program to Find the Shortest Path from Source Vertex to All Other Vertices in Linear Time
+C++ Program to Use the Bellman-Ford Algorithm to Find the Shortest Path Between Two Vertices Assuming that Negative Size Edges Exist in the Graph
+C++ Program to Implement Shortest Path Algorithm for DAG Using Topological Sorting
+C++ Program to Find Shortest Path Between All Vertices Using Floyd-Warshall’s Algorithm
+C++ Program to Find the Shortest Cycle in a Graph
+C++ Program to Implement Dijkstra’s Algorithm Using Queue
+C++ Program to Implement Dijkstra’s Algorithm Using Priority_queue (Heap)
+C++ Program to Implement Dijkstra’s Algorithm Using Set
+C++ Program to Implement Bellmanford Algorithm
+C++ Program to Implement Floyd-Warshall Algorithm
+C++ Program to Implement Johnson’s Algorithm
+C++ Program to Find SSSP(Single Source Shortest Path) in DAG(Directed Acyclic Graphs)
+
+The C++ programs in this section computes the transitive closure of a graph
+using warshall-algorithm and evaluates the transpose of a graph matrix.
+Warshall algorithm is used for finding shortest paths in a weighted graph
+with positive or negative edge weights. The reachability of a particular
+node ‘i’ towards all node pairs (‘i’,’j’) is known as the transitive
+closure of a graph.
+
+C++ Program to Find the Transitive Closure of a Given Graph G
+C++ Program to Construct Transitive Closure Using Warshall’s Algorithm
+C++ Program to Find Transitive Closure of a Graph
+
+Hungarian algorithm, also known as Munkres algorithm is a method for solving
+the assignment problem. Bipartite Graph is a set of the edges chosen in
+such a way that no two edges share an endpoint. Maximum cardinality matching
+is has maximum size over all matchings in the graph. Edmonds’ algorithm is
+an algorithm for finding a maximum or minimum optimum branchings. The
+following section contains C++ programs on solving matching problems for
+given specific case and implements hungarian and edmond algorithm for bipartite
+and cardinality matching.
+
+C++ Program to Solve a Matching Problem for a Given Specific Case
+C++ Program to Rearrange Letters of a String such that no More than 1 Letters should Retain the Same Position
+C++ Program to Solve a Matching Problem for a Given Specific Case
+C++ Program to Implement the Hungarian Algorithm for Bipartite Matching
+C++ Program to Implement the Edmond’s Algorithm for Maximum Cardinality Matching
+C++ Program to Solve a Matching Problem for a Given Specific Case
+
+Eulerian path and circuit for undirected graph. Eulerian Path is a path in
+graph that visits every edge exactly once. Eulerian Circuit is an Eulerian
+Path which starts and ends on the same vertex. Euler Circuit in a Directed
+Graph. Eulerian Path is a path in graph that visits every edge exactly once.
+Eulerian Circuit is an Eulerian Path which starts and ends on the same vertex.
+The C++ programs in this section checks whether directed and undirected graph
+contains a eulerian cycle or eulerian path. It also explains implementation of
+chinese postman and euler circuit problems.
+
+C++ Program to Check Whether an Undirected Graph Contains a Eulerian Cycle
+C++ Program to Check Whether an Undirected Graph Contains a Eulerian Path
+C++ Program to Check Whether a Directed Graph Contains a Eulerian Cycle
+C++ Program to Check Whether a Directed Graph Contains a Eulerian Path
+C++ Program to Give an Implementation of the Traditional Chinese Postman Problem
+C++ Program to Implement Euler Circuit Problem
+
+An edge in an undirected connected graph is a bridge if removing it disconnects
+the graph. A vertex in an undirected connected graph is an articulation point
+(or cut vertex) iff removing it (and edges through it) disconnects the graph.
+The C++ programs in this section whether graph is bipartite using BFS, DFS and
+color algorithm. The programs determine if the graph is weakly connected or
+strongly connected and also tests for edge connectivity and vertex connectivity
+of graphs.
+
+C++ Program to Check Whether it is Weakly Connected or Strongly Connected for a Directed Graph
+C++ Program to Check Whether a Weak Link i.e. Articulation Vertex Exists in a Graph or Check Whether G is Biconnected or Not
+C++ Program to Implement an Algorithm to Find the Global min Cut in a Graph
+C++ Program to Find the Edge Connectivity of a Graph
+C++ Program to Find the Vertex Connectivity of a Graph
+C++ Program to Check whether Graph is a Bipartite using 2 Color Algorithm
+C++ Program to Check whether Graph is a Bipartite using BFS
+C++ Program to Check whether Graph is a Bipartite using DFS
+C++ Program to Find Maximum Number of Edge Disjoint Paths
+C++ Program to Find Number of Articulation points in a Graph
+
+Binary tree is made of nodes, where each node contains a left reference, a
+right reference, and a data element. The topmost node in the tree is called
+the root. AVL tree is a self balanced binary search tree. Cartesian tree is
+a binary tree derived from a sequence of numbers. Splay tree is a self-balancing
+data structure where the last accessed key is always at root. A fusion tree
+is a type of tree data structure that implements an associative array on
+w-bit integers. Red Black tree is a special type of binary tree, used in computer
+science to organize pieces of comparable data, such as text fragments or numbers.
+The C++ programs in this section deals with implementation of b tree, segment
+tree, splay tree, avl tree, aa tree, cartesian, splay, suffix, ternary, range
+and fusion trees, trie, tango tree, programs to perform operations in BST,
+programs to construct an expression tree for prefix, infix and postfix
+expressions.
+
+C++ Program to Perform Dictionary Operations in a Binary Search Tree
+C++ Program to Create a Balanced Binary Tree of the Incoming Data
+C++ Program to Perform Operations in a BST
+C++ Program to Construct an Expression Tree for a Given Prefix Expression
+C++ Program to Construct an Expression Tree for a Postfix Expression
+C++ Program to Construct an Expression Tree for an Infix Expression
+C++ Program to Perform Preorder Non-Recursive Traversal of a Given Binary Tree
+C++ Program to Perform Postorder Non-Recursive Traversal of a Given Binary Tree
+C++ Program to Perform Inorder Non-Recursive Traversal of a Given Binary Tree
+C++ Program to Perform Preorder Recursive Traversal of a Given Binary Tree
+C++ Program to Perform Postorder Recursive Traversal of a Given Binary Tree
+C++ Program to Perform Inorder Recursive Traversal of a Given Binary Tree
+C++ Program to Sort an Array of 10 Elements Using Heap Sort Algorithm
+C++ Program to Implement Double Order Traversal of a Binary Tree
+C++ Program to Perform Left Rotation on a Binary Search Tree
+C++ Program to Perform Right Rotation on a Binary Search Tree
+C++ Program to Print the Kind of Rotation the AVL Tree is Undergoing When you Add an Element or Delete an Element
+C++ Program to Print only Odd Numbered Levels of a Tree
+C++ Program to Find Deepest Left Leaf in a Binary Tree
+C++ Program to Remove All nodes which don’t lie in any Path with Sum >= K
+C++ Program to Check if a Given Binary Tree is an AVL Tree or Not
+C++ Program to Delete a Particular Node in a Tree Without Using Recursion
+C++ Program to Find Whether a Path Exists Between 2 Given Nodes
+C++ Program to Check Whether an Input Binary Tree is the Sub Tree of the Binary Tree
+C++ Program to Check if a Binary Tree is a BST
+C++ Program to Implement Sorted Linked List to Balanced BST
+C++ Program to Implement Segment Tree
+C++ Program to Implement B-Tree
+C++ Program to Implement Interval Tree
+C++ Program to Implement Range TreeC++ Program to Implement Ternary Search Tree
+C++ Program to Implement AA Tree
+C++ Program to Implement AVL Tree
+C++ Program to Implement Cartesian Tree
+C++ Program to Implement Splay Tree
+C++ Program to Implement T Tree
+C++ Program to Implement Tango Tree
+C++ Program to Implement Threaded Binary Tree
+C++ Program to Implement Top Tree
+C++ Program to Implement Weight Balanced Tree
+C++ Program to Implement Trie
+C++ Program to Implement Suffix Tree
+C++ Program to Implement Red Black Tree
+C++ Program to Implement Randomized Binary Search Tree
+C++ Program to Implement ScapeGoat Tree
+C++ Program to Implement self Balancing Binary Search Tree
+C++ Program to Find Lowest Common Ancestor in a Binary Search Tree
+C++ Program To Check Whether a Given Tree is Binary Search Tree
+C++ Program to Implement Ternary Tree
+C++ Program to Implement Range Tree
+C++ Program to Implement Interval Tree
+C++ Program to Implement Segment Tree
+C++ Program to Implement Fusion Tree
+C++ Program to Implement B+ Tree
+C++ Program For Inorder Tree Traversal without Recursion
+C++ Program to Implement B Tree
+C++ Program to Find the Minimum value of Binary Search Tree
+C++ Program to Implement a Binary Search Tree using Linked Lists
+C++ Program to Implement Expression Tree Algorithm
+
+The C++ programs in this section deals with implementation of hopcroft,
+tarjan algorithm, booth and lueker algorithms, check whether graph is planar
+or not. Hopcroft–Karp algorithm is an algorithm that takes as input a bipartite
+graph and produces as output a maximum cardinality matching.
+
+C++ Program to Check Whether a Graph is Planar or Not
+C++ Program to Implement the Hopcroft and Tarjan Algorithm
+C++ Program to Implement the Booth and Lueker Algorithm to Check for Planarity
+
+Beam search is a heuristic search algorithm that explores a graph by expanding
+the most promising node in a limited set. Bidirectional Search searches in two
+directions at the same time, one forward from the initial state and the other
+backward from the goal. The C++ programs in this section demonstrates the
+implementation of beam search algorithm, best first search, bidirectional
+search, depth limited search, iterative depending and uniform cost search.
+it also explains how to find forward, cross and back edges in a graph.
+
+C++ Program to Implement Beam Search Algorithm
+C++ Program to Implement Best First Search
+C++ Program to Implement Bidirectional Search
+C++ Program to Find All Forward Edges in a Graph
+C++ Program to Find All Cross Edges in a Graph
+C++ Program to Find All Back Edges in a Graph
+C++ Program to Implement Depth-Limited Search
+C++ Program to Implement Iterative Deepening
+C++ Program to Implement Uniform-Cost Search
+
+This section contains a C++ programs to find the inverse and transpose of a
+graph matrix and implementation of network flow problem.
+
+C++ Program to Find Inverse of a Graph Matrix
+C++ Program to Find Transpose of a Graph Matrix
+C++ Program to Implement Network_Flow Problem
+
+Edmonds_Karp Algorithm which is used to compute the maximum flow
+between the sink and source vertex. Ford-Fulkersson Algorithm which
+computes the maximum flow present inside a network. The C++ programs
+in this section demonstrates the implementation of edmonds-karp and
+ford–fulkerson algorithm.
+
+C++ Program to Implement The Edmonds-Karp Algorithm
+C++ Program to Implement Ford–Fulkerson Algorithm
+
+Graph traversal is technique used for searching a vertex in a graph
+The graph traversal is also used to decide the order of vertices to
+be visit in the search process. The following section contains C++
+programs on graph traverse using BFS and DFS.
+
+C++ Program to Traverse a Graph using BFS
+C++ Program to Traverse a Graph using DFS

@@ -1,0 +1,116 @@
+Binary search tree algorithm can locate a node in an n node tree in order
+log(n) time. N-ary tree is represented by storing an array or list of child
+pointers with every node. A planar graph is a graph that can be drawn in the
+plane without any edge crossings. This section contains a C++ programs to
+find the maximum size clique and largest clique in a planar graphs, finds
+the size of largest independent set in a binary and n-ary tree, finds the
+clique and compares it with the size of the graph and performs graph coloring.
+
+C++ Program to Find the Maximum Size Clique in a Graph
+C++ Program to Find a Clique by Using the Technique of the Most Dense Subgraph
+C++ Program to Find the Largest clique in a Planar Graph
+C++ Program to Solve the Decision Problem of Testing Whether a Graph Contains a Clique Larger than a Given Size
+C++ Program to Find a Maximum Weight Clique in a Weighted Graph
+C++ Program to Find All the Cliques of a Given Size k
+C++ Program to Find the Largest Independent Set in a Graph by Comravplements and Find the Clique of this Graph
+C++ Program to Find Independent Sets in a Graph by Graph Coloring
+C++ Program to Find the Maximum Independent Set of a Tree in Linear Time
+C++ Program to Find Size of the Largest Independent Set(LIS) in a Given a Binary Tree
+C++ Program to Find Size of the Largest Independent Set(LIS) in a Given an N-ary Tree
+
+A vertex cover of an undirected graph is a subset of its vertices such that
+for every edge (u, v) of the graph, either ‘u’ or ‘v’ is in vertex cover. The
+following section contains C++ programs to check whether vertex cover size k
+exists or not, implements heuristic to find the vertex cover in a graph and
+solves dominating set problem.
+
+C++ Program to Implement a Heuristic to Find the Vertex Cover of a Graph
+C++ Program to Solve the Dominating Set Problem
+C++ Program to Check Whether a Vertex Cover of Size k Exists
+
+Travelling Salesman Problem which computes the minimum cost required to visit
+all the nodes by traversing across the edges only once. Held–Karp algorithm,
+is a dynamic programming algorithm to solve the Traveling Salesman Problem.
+The following Section Contains C++ programs to solve TSP using minimum spanning
+trees, incremental insertion method and graphs. It also finds the k-optimal
+tour for TSP, implements branch and bound method, held-karp algorithm and TSP
+using nearest neighbour algorithm.
+
+C++ Program to Solve Travelling Salesman Problem for Unweighted Graph
+C++ Program to Implement Branch and Bound Method to Perform a Combinatorial Search
+C++ Program to Solve TSP Using Minimum Spanning Trees
+C++ Program to Solve TSP Using Incremental Insertion Method
+C++ Program to Find a k-Optimal Tour for TSP
+C++ Program to Implement Held-Karp Algorithm
+C++ Program to Implement Nearest Neighbour Algorithm
+C++ Program to Implement Traveling Salesman Problem using Nearest Neighbour Algorithm
+
+Hamiltonian cycle or path in a graph is a special case of the traveling
+salesman problem, one where each pair of vertices with an edge between them
+has distance 1, while nonedge vertex pairs are separated by distance infinity.
+This section contains C++ programs to find the hamiltonian cycle in a graph
+and checks whether the given graph is hamiltonian or not. it also converts
+hamiltonian cycle into path.
+
+C++ Program to Find Hamiltonian Cycle in an UnWeighted Graph
+C++ Program to Find the Longest Path in a DAG
+C++ Program to Check if a Given Graph must Contain Hamiltonian Cycle or Not
+C++ Program to Convert Hamiltonian Cycle into Path
+C++ Program to Check Whether a Hamiltonian Cycle or Path Exists in a Given Graph
+
+Depth-first search (DFS) is an algorithm for traversing or searching tree or
+graph data structures. This section contains C++ programs to find the minimum
+edges and maximum cut in a graph, performs spectral partitioning of graph and
+tree partition using DFS.
+
+C++ Program to Find Minimum Number of Edges to Cut to make the Graph Disconnected
+C++ Program to Partition a Tree from a Given Element using DFS
+C++ Program to Find the Maximum Cut in a Graph
+C++ Program to Perform Spectral Partitioning of a Graph
+
+Bipartite Graph is a graph in which the set of vertices can be divided into two
+sets such that all vertex should be present in either set 1 or set 2 but not both,
+and there should no edge between vertices belonging to same set. The graph coloring
+is a way of coloring the vertices of a graph such that no two adjacent vertices
+share the same color. The C++ programs in this section performs greedy coloring,
+graph and edge coloring on bipartite graphs, checks whether given graph is
+bipartite or not and implements 4-color problem, it also performs vertex coloring
+graph by using color interchange method.
+
+C++ Program to Perform Graph Coloring on Bipartite Graphs
+C++ Program to Check if a Given Graph is Bipartite
+C++ Program to Perform Edge Coloring of a Graph
+C++ Program to Use Color Interchange Method to Perform Vertex Coloring of Graph
+C++ Program to Demonstrate the Implementation of 4-Color Problem
+C++ Program to Perform Greedy Coloring
+
+Vizing’s theorem states that the edges of every simple undirected graph may be
+colored using a number of colors that is at most one larger than the maximum
+degree of the graph. The C++ programs in this section performs edge coloring
+on graphs, finds the chromatic index and arboricity of a graph, implements
+vizing’s theorem and solves open shop scheduling problems.
+
+C++ Program to Implement the Vizing’s Theorem
+C++ Program to Find Chromatic Index of Cyclic Graphs
+C++ Program to Perform Edge Coloring on Complete Graph
+C++ Program to Perform Edge Coloring to the Line Graph of an Input Graph
+C++ Program to Find the Arboricity of a Graph
+C++ Program to Solve the Open Shop Scheduling Problem
+
+Steiner Tree may contain some vertices which are not in given subset but are
+used to connect the vertices of subset. This section contains C++ programs
+to find the Steiner tree and its size of a graph, it also explains the program
+to apply heuristic based shortest path to find the steiner tree.
+
+C++ Program to Find the Steiner Tree of a Given Graph
+C++ Program to Apply Heuristic Based on Shortest Path to Find Steiner Tree
+C++ Program to Check if a Steiner Tree Size k Exists for a Graph
+
+Feedback edge and vertex set in a graph is the set which contains edges/vertex
+which when removed from the graph, graph becomes directed acyclic graph.
+This section contains C++ programs to find the good feedback edge and vertex
+set in a graph and checks whether graph is DAG.
+
+C++ Program to Check Whether Graph is DAG
+C++ Program to Find a Good Feedback Edge Set in a Graph
+C++ Program to Find a Good Feedback Vertex Set

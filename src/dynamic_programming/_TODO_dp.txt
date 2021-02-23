@@ -1,0 +1,534 @@
+﻿Dynamic programming is a method for solving a complex problem by breaking it
+down into simpler subproblems, solving each of those subproblems just once,
+and storing their solutions – in an array(usually).
+Now, everytime the same sub-problem occurs, instead of recomputing its solution,
+the previously calculated solutions are used, thereby saving computation time at
+the expense of storage space.
+
+Dynamic programming can be implemented in two ways –
+
+Memoization – Memoization uses the top-down technique to solve the problem i.e.
+it begin with original problem then breaks it into sub-problems and solve these
+sub-problems in the same way.
+
+In this approach, you assume that you have already computed all subproblems.
+You typically perform a recursive call (or some iterative equivalent) from the
+main problem. You ensure that the recursive call never recomputes a subproblem
+because you cache the results, and thus duplicate sub-problems are not recomputed.
+
+Tabulation – Tabulation is the typical Dynamic Programming approach. Tabulation
+uses the bottom up approach to solve the problem, i.e., by solving all related
+sub-problems first, typically by storing the results in an array. Based on the
+results stored in the array, the solution to the “top” / original problem is
+then computed.
+
+Memoization and tabulation are both storage techniques applied to avoid
+recomputation of a subproblem
+
+The idea behind dynamic programming, In general, is to solve a given problem,
+by solving different parts of the problem (subproblems), then using the
+cached solutions of the subproblems to reach an overall solution.
+
+The problems that can be solved by using Dynamic Programming has the following
+two main properties-
+
+1) Overlapping Subproblems:
+Overlapping subproblems is a property in which a problem can be broken down into
+subproblems which are used multiple times.
+
+Dynamic Programming is mainly used when solutions of same subproblems are needed
+again and again. In dynamic programming, computed solutions to subproblems are
+stored in a array so that these don’t have to recomputed. So Dynamic Programming
+is not useful when there are no overlapping subproblems because there is no point
+storing the solutions if they are not needed again.
+
+2) Optimal substructure
+Optimal substructure is a property in which an optimal solution of the original
+problem can be constructed efficiently from the optimal solutions of its sub-problems.
+
+If a given problem obey both these properties, then the problem can be solved by
+using Dynamic Programming.
+
+Steps to follow for solving a DP problem –
+
+Express a solution mathematically
+Express a solution recursively
+Either develop a bottom up algorithm or top-down memoized algorithm
+
+Example – Consider a program to generate Nth fibonacci number
+Fib(n)=Fib(n-1)+Fib(n-2)
+
+Solution 1 – using top-down approach without Dynamic Programming
+
+int Fib(int n) { 
+     if(n<=1) { 
+          return n; 
+     } 
+     else{
+          return (fibonacci(n-1)+fibonacci(n-2)); 
+     } 
+}
+
+Solution 2 – using top-down approach with Memoization (Dynamic Programming)
+
+int memoize[]; 
+//method to initialize memoize array to -1 
+ 
+void initialize() { 
+	... 
+} 
+ 
+int Fib(int n) { 
+	if(memoize[n]==-1) { 
+		//means the solution is not yet calculated 
+		if(n<=1) { 
+			memoize[n]=1; 
+		} 
+ 
+		else { 
+			memoize[n]=Fib[n-1]+Fib[n-2]; 
+		} 
+	} 
+	return memoize[n]; 
+}
+
+Solution 3 – Bottom up Dynamic Programming
+
+int table[N]; 
+void setup_fib() { 
+    table[0] = 1; 
+    table[1] = 1; 
+ 
+    for (int i = 2; i < N; i++) 
+        table[i] = table[i-1] + table[i-2]; 
+} 
+ 
+int Fib(int x) {  
+	return table[x];  
+}
+
+
+
+TODO:
+
+Kadane’s Algorithm
+	Given a sequence of n real numbers A(1) … A(n), determine a contiguous
+	subsequence A(i) … A(j) for which the sum of elements in the subsequence
+	is maximized.
+
+0 1 Knapsack Problem
+	Given weights and values of n items, put these items in a knapsack of
+	capacity M to get the maximum total value in the knapsack. Note that,
+	you can select items, the sum of whose weight is less than or equal to
+	the capacity of knapsack, W.
+
+Longest Increasing Subsequence Problem
+	Given a sequence of n real numbers A(1) … A(n), determine a subsequence
+	(not necessarily contiguous) of maximum length in which the values in
+	the subsequence form a strictly increasing sequence.
+
+Edit Distance Problem
+	There are two strings src and dest. The goal of the problem is to convert
+	src to dest by applying minimum edit operations on string str1. The edit
+	operations are following –
+	1) insert a character
+	2) delete a character
+	3) replace a character
+
+Integer Knapsack Problem
+	Given weights and values of n items, put these items in a knapsack of capacity
+	M, to get the maximum total value in the knapsack. Note that- there are infinite
+	instances of each item available. So, any item can be selected any number of
+	times. The problem is similar to 0 1 knapsack problem. The only difference is
+	that in 0 1 knapsack problem a particular item could be put into knapsack at
+	most one time. But in integer knapsack problem, there is no such limit.
+
+Fibonacci Numbers Problem
+	Find nth fibonacci number.
+	The Fibonacci Sequence is the series of numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, …
+	The next number is found by adding up the two numbers before it.
+	Let F[i] be the ith fibonacci number
+	F[0]=0
+	F[1]=1
+	F[i]=F[i-1]+F[i-2]
+
+Rod Cutting Problem
+	Given a rod of size n and values of various sizes of rod. The problem is to cut the
+	rod in such a way that the sum of values of the pieces is maximum.
+
+Subset Sum Problem
+	There is a subset A of n positive integers and a value sum. Find whether or not there
+	exists any subset of the given set, the sum of whose elements is equal to the given
+	value of sum.
+
+Parentheses Expressions Problem – Catalan numbers
+	How many different strings are possible containing n pairs of parentheses which are
+	correctly matched?
+
+Forming Triangles Problem
+	In how many ways a plane convex polygon of n sides can be divided into triangles
+	by diagonals?
+
+Change Making Problem
+	There are infinite number of coins of n different values. These values are given.
+	Using these coins, you have to make change for Rs. Sum. Find the minimum number of
+	coins required to change Rs. Sum. Note that the problem is different from coin
+	change problem. In coin change problem, we were asked to find out in how many ways
+	the change can be made. In this problem, we are supposed to find out the minimum
+	number of coins required to change.
+
+Coin Change Problem
+	There are infinite number of coins of x different values. These values are given.
+	Using these coins, you have to make change for Rs. N. In how many ways, you can make
+	this change? Note that there are infinite number of coins of each given value.
+
+Number of Ways to Reach a Given Score Problem
+	In a game, a player can score only 3, 5 or 10 points in a move. Given a score S,
+	find the number of ways to reach the given score using the specified moves.
+
+Matrix Chain Multiplication Problem
+	Given order of n matrices, find the minimum multiplication operations required
+	for multiply n matrices. Required condition for multiplying two matrices
+	If we have two matrix A of order a*b and matrix B of order c*d. In the product
+	A*B, matrix A is called pre-multiplier and B is called the post-multiplier.
+	A and B can be multiplied if b=c. And the order of the resulting matrix will
+	be a*d.
+	
+	In general, the number of columns of pre-multiplier matrix should be equal to
+	number of rows of post-multiplier matrix.
+	
+	Multiplication operations performed for multiplying two matrices.
+	In the above example, the number of multiplication operations required for
+	multiplying matrix A and B, will be a*b*d.
+	
+	Now, suppose we have three matrices as follows –
+	matrix A of order a*b
+	matrix B of order b*c
+	matrix C of order c*d
+	
+	We have to find the product A*B*C. This can be done in two ways mentioned below –
+	((A*B)*C) – first multiplying A and B and then multiplying the resulting matrix
+	with c. This will cost a*b*c + a*c*d multiplication operations
+
+	(A*(B*C)) – first multiplying B and C and then multiplying A with the resulting
+	matrix. This will cost a*b*d + b*c*d multiplication operations
+	So, a given matrix chain be multiplied in various ways. The goal of the problem
+	is to find the least number of operations required to find the product of the
+	matrix chain.
+	
+	If in the above explanation a=3, b=9, c=7, d=2
+	((A*B)*C) will take 231 multiplication operations
+	(A*(B*C)) will take 180 multiplication operations
+	So, the preferred way of multiplication will be (A*(B*C)).
+
+Maximum Value of Gifts Problem
+	You are given a matrix of order n*m. Each cell of the matrix has a gift of
+	certain value. Starting from the top-left cell, you have to reach the bottom-right
+	cell of the matrix collecting gifts of the visited cells. But you can visit either
+	the cell below the current cell or the cell to right of current cell. Determine
+	the maximum value of gifts you can collect.
+
+Rod Cutting – Maximum Product Problem
+	You are given a rod of integer length. You have to cut the rod in various pieces
+	such that the product of the lengths of all pieces is maximum.
+
+Stolen Values Problem
+	There are n houses built in a line, each of which contain some value in it. A
+	thief is going to steal in these houses. But he cannot steal in two adjacent
+	houses. What is maximum value he can steal?
+
+Assembly Line Scheduling
+	There are two assembly lines. Each assembly line has n stations.
+	Every station has some dedicated job that needs to done. For a station number
+	i, you can get the job done on station number i of any assembly line.
+	You can go to station i only when you have been through station i-1.
+	From a station i, you can either go to the next station on the same line or
+	you can transfer assebly line.
+	
+	Information provided –
+	time to enter station 1 on both assembly lines time to exit last station on
+	both lines job processing time for every station.
+	The time to transfer from each station of assembly line 1 to next station of
+	assembly line 2 is given.
+	The time to transfer from each station of assembly line 2 to next station of
+	assembly line 1
+	
+	Objective of the problem is to finish all the jobs in minimum time.
+
+Shortest Common Subsequence Problem
+	You are given two strings. Find the length of the shortest string that has
+	both the given strings as subsequences.
+
+Boredom Problem
+	Alex doesn’t like boredom. That’s why whenever he gets bored, he comes up
+	with games. One long winter evening he came up with a game and decided to
+	play it. Given a sequence a consisting of n integers. The player can make
+	several steps. In a single step he can choose an element of the sequence
+	(let’s denote it a[k]) and delete it, at that all elements equal to
+	a[k] + 1 and a[k] - 1 also must be deleted from the sequence. That step
+	brings ak points to the player.
+	Alex is a perfectionist, so he decided to get as many points as possible.
+	Help him.
+
+Longest Common Subsequence Problem
+	There are 2 strings str1 and str2. Find the length of the longest subsequence
+	common to both str1 and str2.
+
+Binary Trees with N Keys Problem
+	How many structurally different binary trees are possible with n nodes?
+
+Balanced Partition Problem
+	You are given a set of integers. Determine whether or not this set can be
+	divided into two subsets such that the sum of elements in each subset
+	is equal.
+
+Box Stacking Problem
+	There are n cuboidal boxes. The dimensions of these boxes(length, breadth and height)
+	are given. The objective is to stack the boxes to achieve maximum height.
+	But you can place a box on top of another box only if its base dimensions
+	are strictly lower than the other box. You can rotate the boxes. Also, you
+	can use multiple instances of the same box.
+
+Building Bridges
+	There is a river. There are n cities on both sides of the river
+	(not necessarily in the same order). Bridges are to be built on the river
+	for every city (from one end of the river to the other end where the same
+	city is located). But no two bridges should intersect. Find out the maximum
+	number of cities for which the bridges can be built over the river.
+
+	NOTE- For every city i on one end, there is a city i on the other end.
+
+Dice Throw Problem
+	There are n identical dices. Each dice has given number of faces.
+	In how many ways, you can get the given sum.
+
+Longest Substring Without Duplication Problem
+	You are given a string. Find the length of longest substring of the given
+	string which does not contain any duplicate character.
+
+Optimal Game Strategy Problem
+	This is a two player game. There are even number of coins arranged in a
+	row. There will be alternate turns. In each turn, a player can either
+	select the first coin in the row or the last coin in the row and keep
+	it with him. The objective of the problem is to determine the maximum
+	possible amount of money a player can definitely win, if he move first.
+
+Minimum Number of Jumps Problem
+	Given an array of integers where each element represents the max number
+	of steps that can be made forward from that element. Write a program to
+	find the minimum number of jumps to reach the end of the array (starting
+	from the first element). If an element is 0, then cannot move through
+	that element.
+
+Binomial Coefficients Problem
+	Given two values n and k, find the number of ways of chosing k objects
+	from among n objects disregarding order.
+	The problem can be rephrased as finding the binomail coefficient C(n,k).
+
+Counting Boolean Parenthesization Problem
+	You are given a boolean expression with symbols True and False and operators
+	And, Or and Xor. Find the number of ways in which the expression can be
+	parenthesized so that the value of expression evaluates to true.
+
+Building Problem
+	There are n plots in a row. Buildings are to be constructed on these plots
+	in such a way that there is space between every two buildings. Find the
+	number of ways in which buildings can be constructed in the plots.
+
+Longest Common Substring Problem
+	Given two strings, find the length of the longest common substring of
+	both the given strings.
+	Note that this problem is different from longest common subsequence
+	(LCS) problem.
+
+Longest Palindromic Subsequence Problem
+	You are given a string str. Find the length of longest palindromic
+	subsequence in the given string.
+
+Make Palindrome Problem
+	You are given a string str. Find the minimum number of characters to
+	be inserted to string str to convert it to a palindrome.
+
+Minimum number of Squares Problem
+	It is always possible to represent a number in the form of sum of
+	squares of numbers.
+	For example – 15= 3^2 + 2^2 + 1^2 + 1^2
+	Given a number x, find the minimum number of squares whose sum equals
+	to x.
+
+Sum of Digits Problem
+	Given a number n, find the sum of digits of all numbers from 1 to n.
+
+Alice Kindergarden Candies Problem
+	Alice is a kindergarden teacher. She wants to give some candies to
+	the children in her class. All the children sit in a line ( their
+	positions are fixed), and each of them has a rating score according to
+	his or her performance in the class. Alice wants to give at least 1
+	candy to each child. If two children sit next to each other, then the
+	one with the higher rating must get more candies. Alice wants to save
+	money, so she needs to minimize the total number of candies given to
+	the children.
+
+Mixtures Problem
+	Harry Potter has n mixtures in front of him, arranged in a row. Each
+	mixture has one of 100 different colors (colors have numbers from 0 to 99).
+	He wants to mix all these mixtures together. At each step, he is going to
+	take two mixtures that stand next to each other and mix them together, and
+	put the resulting mixture in their place.
+	When mixing two mixtures of colors a and b, the resulting mixture will
+	have the color (a+b) mod 100.
+	Also, there will be some smoke in the process. The amount of smoke generated
+	when mixing two mixtures of colors a and b is a*b.
+	Find out what is the minimum amount of smoke that Harry can get when mixing
+	all the mixtures together.
+
+Blueberries Problem
+	Teresa wants to pick up the blueberries in such a way that she may not exceed
+	the limit proposed. When picking the blueberries, she noticed that if she
+	pick from the bush i, she couldn’t pick the blueberries at the bush i+1
+	(some sort of magic in rainbowland).
+	Worried about this, Teresa wants to know the maximum blueberries she can pick,
+	given the number of bushes and the number of blueberries in each bush.
+	Will contain an integer T, then, T cases will follow, each case starts with a
+	number N and K, being N the number of bushes and K the number of blueberries
+	Teresa will pick as maximum, the next line contains N integers, each one
+	representing the blueberries there is on the i-th bush.
+
+Army Problem
+	The Berland Armed Forces System consists of n ranks that are numbered using
+	natural numbers from 1 to n, where 1 is the lowest rank and n is the highest
+	rank. One needs exactly d[i] years to rise from rank i to rank i + 1.
+	Reaching a certain rank i having not reached all the previous i - 1 ranks
+	is impossible.
+	Vasya has just reached a new rank of a, but he dreams of holding the rank of
+	b. Find for how many more years Vasya should serve in the army until he can
+	finally realize his dream.
+
+Double Helix Problem
+	Two ﬁnite, strictly increasing, integer sequences are given. Any common
+	integer between the two sequences constitute an intersection point.
+	You can ‘walk” over these two sequences in the following way:
+	1. You may start at the beginning of any of the two sequences.
+	Now start moving forward.
+	2. At each intersection point, you have the choice of either continuing
+	with the same sequence you’re currently on, or switching to the other
+	sequence.
+	
+	The objective is ﬁnding a path that produces the maximum sum of data you
+	walked over.
+
+Length of the Longest Arithmetic Progression Problem
+	Given sorted array of integers, find the Length of the Longest Arithmetic
+	Progression (LLAP) in it.
+
+Newspaper Headline Problem
+	A newspaper is published in Walrusland. Its heading is s1, it consists of
+	lowercase Latin letters.
+	Fangy the little walrus wants to buy several such newspapers, cut out their
+	headings, glue them one to another in order to get one big string. After that
+	walrus erase several letters from this string in order to get a new word s2.
+	It is considered that when Fangy erases some letter, there’s no whitespace
+	formed instead of the letter. That is, the string remains unbroken and it
+	still only consists of lowercase Latin letters.
+
+Stock Maximize Problem
+	Your algorithms have become so good at predicting the market that you now
+	know what the share price of Wooden Orange Toothpicks Inc. (WOT) will be
+	for the next N days.
+	Each day, you can either buy one share of WOT, sell any number of shares
+	of WOT that you own, or not make any transaction at all. What is the maximum
+	profit you can obtain with an optimum trading strategy?
+
+Stock Market Problem
+	Given the price of share on n days, find the maximum profit that you
+	can make by buying and selling a share at most twice.
+
+Treats for the Cows
+	FJ has purchased N (1 <= N <= 2000) yummy treats for the cows who get
+	money for giving vast amounts of milk. FJ sells one treat per day and
+	wants to maximize the money he receives over a given period time. The
+	treats are interesting for many reasons: The treats are numbered 1..N
+	and stored sequentially in single file in a long box that is open at
+	both ends. On any day, FJ can retrieve one treat from either end of his
+	stash of treats. Like fine wines and delicious cheeses, the treats
+	improve with age and command greater prices. The treats are not uniform:
+	some are better and have higher intrinsic value. Treat i has value v(i)
+	(1 <= v(i) <= 1000). Cows pay more for treats that have aged longer:
+	a cow will pay v(i)*a for a treat of age a. Given the values v(i) of
+	each of the treats lined up in order of the index i in their box, what
+	is the greatest value FJ can receive for them if he orders their sale
+	optimally? The first treat is sold on day 1 and has age a=1. Each
+	subsequent day increases the age by 1.
+
+Weighted Activity Selection Problem
+	There are N jobs. Each job has a start time, end time and value.
+	You have to attain the maximum value by performing these jobs. However,
+	you can do only one job at a time.
+
+Assignments Problem
+	Your task will be to calculate number of different assignments of n
+	different topics to n students such that everybody gets exactly
+	one topic he likes.
+	First line of input contains number of students n.
+	
+	Each of the next n lines contains n integers describing preferences of
+	one student. 1 at the ith position means that this student likes ith
+	topic, 0 means that he definitely doesn’t want to take it.
+	
+	For each test case output number of different assignments (it will fit
+	in a signed 64-bit integer).
+
+Bellman Ford Algorithm
+	Given a weighted graph and a source vertex. Find the shortest path
+	from the source to all the vertices. The graph may contain edges
+	with negative value.
+
+Bytelandian Gold Coins Problem
+	Each Bytelandian gold coin has an integer number written on it. A
+	coin n can be exchanged in a bank into three coins: n/2, n/3 and n/4.
+	But these numbers are all rounded down (the banks have to make a profit).
+	You can also sell Bytelandian coins for American dollars. The exchange
+	rate is 1:1. But you can not buy Bytelandian coins.
+	You have one gold coin of value n, 0 <= n <= 1000000000. What is the
+	maximum amount of American dollars you can get for it?
+
+Cut Ribbon Problem
+	Polycarpus has a ribbon, its length is n. He wants to cut the ribbon
+	in a way that fulfils the following two conditions:
+	After the cutting each ribbon piece should have length a, b or c.
+	After the cutting the number of ribbon pieces should be maximum.
+	Help Polycarpus and find the number of ribbon pieces after the required cutting.
+	Constraints-
+	1 <= n, a, b, c <= 4000 The numbers a, b and c can coincide.
+
+Flloyd Warshall Algorithm
+	Find shortest distance between each pair of vertices in the given graph.
+	This problem is also known as All pairs shortest path problem.
+
+Non Decreasing Digits Problem
+	A number is said to be made up of non-decreasing digits if all the
+	digits to the left of any digit is less than or equal to that digit.
+	For example, the four-digit number 1234 is composed of digits that are
+	non-decreasing.
+	Some other four-digit numbers that are composed of non-decreasing digits
+	are 0011, 1111, 1112, 1122, 2223. As it turns out, there are exactly 715
+	four-digit numbers composed of non-decreasing digits.
+	Notice that leading zeroes are required: 0000, 0001, 0002 are all valid
+	four-digit numbers with non-decreasing digits.
+	For this problem, you will write a program that determines how many such
+	numbers there are with a specified number of digits.
+	Constraints: A decimal integer giving the number of digits N, (1 <= N <= 64)
+
+T-Primes Problem
+	We know that prime numbers are positive integers that have exactly
+	two distinct positive divisors. Similarly, we’ll call a positive integer
+	t Т-prime, if t has exactly three distinct positive divisors. You are given
+	an array of n positive integers. For each of them determine whether it is
+	Т-prime or not. Constraints: Number to check for T-prime, x (1 <= x <= 10^12).
+
+Trigraphs Problem
+	A tri-graph is an acyclic graph of (N >= 2) rows and exactly 3 columns.
+	Unlike regular graphs, the costs in a tri-graph are associated with the
+	vertices rather than the edges.
+	The problem is to find the shortest path from the top-middle vertex to the
+	bottom-middle vertex in a given tri-graph.

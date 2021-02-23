@@ -1,0 +1,148 @@
+The C++ programs in this section performs encoding matrix using a hidden-key
+and LU Decomposition of any matrix. It also deals with implementation of
+Coppersmith Freivald’s Algorithm to check if the 3rd matrix is the result of
+multiplication of the given two matrices. Gauss jordan elimination is an algorithm
+for solving systems of linear equations. Gauss seidel method is an iterative
+method used to solve a linear system of equations.
+
+C++ Program to Solve any Linear Equation in One Variable
+C++ Program to Find Inverse of a Matrix
+C++ Program to Perform Encoding of a Message Using Matrix Multiplication
+C++ Program to Perform LU Decomposition of any Matrix
+C++ Program to Implement Coppersmith Winograd Algorithm
+C++ Program to Implement Coppersmith Freivald’s Algorithm
+C++ Program to Implement Gauss Jordan Elimination
+C++ Program to Implement Gauss Seidel Method
+C++ Program to Represent Linear Equations in Matrix Form
+C++ Program to Find Closest Pair of Points in an Array
+
+The C++ programs in this section performs bandwidth reduction on graphs,
+implementation of different algorithms like RCM and optimize wire length
+in electrical circuit.
+
+C++ Program to Implement RCM Algorithm
+C++ Program to Optimize Wire Length in Electrical Circuit
+C++ Program to Perform Bandwidth Reduction on Graphs
+
+This section contains C++ programs on matrix multiplication and multiplication
+for complex numbers, implementation of strassen’s algorithm for matrix
+multiplication. This section also contains programs on how to check sparsity
+of a given matrix and also multiplicability of two matrices.
+
+C++ Program to Perform Matrix Multiplication
+C++ Program to Implement Strassen’s Algorithm
+C++ Program to Perform Optimal Paranthesization Using Dynamic Programming
+C++ Program to Find Path Between Two Nodes in a Graph
+C++ Program to Check if it is a Sparse Matrix
+C++ Program to Find Basis and Dimension of a Matrix
+C++ Program to Perform Complex Number Multiplication
+C++ Program to Check Multiplicability of Two Matrices
+
+The C++ programs in this section on invertible a matrix and evaluating matrix determinant.
+
+C++ Program to Check if a Matrix is Invertible
+C++ Program to Compute Determinant of a Matrix
+
+This section contains a C++ programs to find the minimum and maximum value of any
+algebraic expressions and compute local optima by implementing steepest descent
+method and conjugate method.
+
+C++ Program to Find Minimum Value of any Algebraic Expression
+C++ Program to Find Maximum Value of any Algebraic Expression
+C++ Program to Implement Steepest Descent Method and Compute Local Optima
+C++ Program to Implement Conjugate Method and Compute Local Optima
+C++ Program to Implement Modular Exponentiation Algorithm
+
+This section contains C++ Programs on optimising solutions for different
+applications using linear programming concept and also contains a program
+to find the maximum value of an expression.
+
+C++ Program to Find Maximum Value of an Expression and Given 3 Inequalities
+C++ Program to Optimize Solution for Employer Applicant Mark Problem Using Linear Programming
+
+This section contains C++ programs on genrating passwords with specified length
+and range, generating random numbers and random hexadecimal bytes, generate
+random numbers using probability distribution function, middle square and
+carry methods, implementing rand and srand functions
+
+C++ Program to Generate N Number of Passwords of Length M Each
+C++ Program to Generate Date Between Given Range
+C++ Program to Generate Randomized Sequence of Given Range of Numbers
+C++ Program to Generate Random Hexadecimal Bytes
+C++ Program to Generate Tetris Game Using Random Number Generation
+C++ Program to Create a Random Bitmap Image
+C++ Program to Emulate N Dice Roller
+C++ Program to Use rand and srand Functions
+C++ Program to Implement the linear congruential generator for Pseudo Random Number Generation
+C++ Program to Generate Random Numbers Using Middle Square Method
+C++ Program to Generate Random Numbers Using Multiply with Carry Method
+C++ Program to Generate Random Numbers Using Probability Distribution Function
+C++ Program to Implement Inversion Method for Random Number Generation
+C++ Program to Perform Random Number Generation Using Inversion Method
+C++ Program to Implement Fisher-Yates Algorithm for Array Shuffling
+C++ Program to Implement Park-Miller Random Number Generation Algorithm
+C++ Program to Implement Naor-Reingold Pseudo Random Function
+
+This section contains C++ programs to generate prime numbers using sieev wheel,
+sieve of eratosthenes, sieve of atkin, sieve of sundaram and rabin-miller
+primalty test. It also contains programs on computing GCD, LCM and factorization
+of numbers. It also explains the program to perform baillie-PSW and fermat
+primality test.
+
+C++ Program to Implement wheel Sieve to Generate Prime Numbers Between Given Range
+C++ Program to Implement Sieve of eratosthenes to Generate Prime Numbers Between Given Range
+C++ Program to Implement Sieve of Atkin to Generate Prime Numbers Between Given Range
+C++ Program to Implement Segmented Sieve to Generate Prime Numbers Between Given Range
+C++ Program to Implement the Rabin-Miller Primality Test to Check if a Given Number is Prime
+C++ Program to Implement the Solovay-Strassen Primality Test to Check if a Given Number is Prime
+C++ Program to Find the GCD and LCM of n Numbers
+C++ Program to Perform the Unique Factorization of a Given Number
+C++ Program to Find GCD of Two Numbers Using Recursive Euclid Algorithm
+C++ Program to Generate Prime Numbers Between a Given Range Using the Sieve of Sundaram
+C++ Program to Perform Baillie-PSW Primality Test
+C++ Program to Perform Fermat Primality Test
+
+The C++ programs in this section to perform addition operations and multiplication
+using bitwise operators, implementation of schonhage strassen algorithm, euler
+theorem, russian peasant multiplication and fermats little theorem.
+
+C++ Program to Perform Addition Operation Using Bitwise Operators
+C++ Program to Implement Booth’s Multiplication Algorithm for Multiplication of 2 signed Numbers
+C++ Program to Implement the Schonhage-Strassen Algorithm for Multiplication of Two Numbers
+C++ Program to Perform Arithmetic Operations on Numbers of Size Greater than that of Int Without Using any Data Type of Size Greater than Int
+C++ Program to Implement Russian Peasant Multiplication
+C++ Program to Implement Euler Theorem
+C++ Program to Implement Extended Euclidean Algorithm
+C++ Program to Implement Fermat’s Little Theorem
+
+The C++ programs in this section deals with implementation like 0-1 knapsack problem,
+fractional knapsack problem, bin packing algorithm and dynamic programming.
+
+C++ Program to Solve the 0-1 Knapsack Problem
+C++ Program to Solve the Fractional Knapsack Problem
+C++ Program to Perform Partition of an Integer in All Possible Ways
+C++ Program to Fill Given n Numbers into a Given N Number and Ensure that Minimum is Left from N
+C++ Program to Implement the Bin Packing Algorithm
+C++ Program to Solve Knapsack Problem Using Dynamic Programming
+C++ Program to Calculate Maximum Payoff by ReOrdering Two Given Sets
+
+This section contains C++ programs on computing DFT coefficients, naive approach and fast fourier transform method.
+It also performs Complex 2D Array.
+
+C++ Program to Compute DFT Coefficients Directly
+C++ Program to Compute Discrete Fourier Transform Using Naive Approach
+C++ Program to Compute Discrete Fourier Transform Using the Fast Fourier Transform Approach
+C++ Perform to a 2D FFT Inplace Given a Complex 2D Array
+
+This section contains C++ programs to find the factorial number using recursion,
+iteration and dynamic programming, fibonacci numbers using recursion, iteration,
+dynamic programming and matrix exponentiation.
+
+C++ Program to Find Factorial of a Number using Recursion
+C++ Program to Find Factorial of a Number using Iteration
+C++ Program to Find Factoial of a Number using Dynamic Programming
+C++ Program to Find Factorial of Large Numbers
+C++ Program to Find Fibonacci Numbers using Recursion
+C++ Program to Find Fibonacci Numbers using Iteration
+C++ Program to Find Fibonacci Numbers using Dynamic Programming
+C++ Program to Find Fibonacci Numbers using Matrix Exponentiation

@@ -52,3 +52,7 @@ int main(){
 // The floor of root is 13
 // Difference between floor and root is 0.0.
 // Thus, it is a perfect square.
+
+// SIMPLER VARIANT
+// long int q = (long int) pow(sq, 0.5);
+// return q * q == sq ? pow(q + 1, 2) : -1;

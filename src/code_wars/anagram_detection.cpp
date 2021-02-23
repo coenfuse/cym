@@ -20,18 +20,16 @@ bool isAnagram(std::string test, std::string original){
             original[index] = std::tolower(original[index]);
         }
 
+        // Alternative Code
+        // std::transform(original.begin(), orignal.end(), original.begin(), ::to_lower);
+        // std::transform(test.begin(), test.end(), test.end(), ::to_lower);
+
         // Sorting the strings to reduce look-up times later. O(logN)
 
         std::sort(test.begin(), test.end());
         std::sort(original.begin(), original.end());
 
-        for(size_t index = 0; index < test.size(); index++){
-            if(original[index] == test[index])      // Comparing the sorted strings linearly
-                continue;
-            else
-                return false;                       // If even one inequality is found. We return false.
-        }
-        return true;                                // If all tests are passed. We return true.
+        return original == test;                    // It compares both strings iteratively.
     }
     return false;                                   // Default return value.
 }

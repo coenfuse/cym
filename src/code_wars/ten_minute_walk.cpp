@@ -61,3 +61,8 @@ int main(){
     isValidWalk({'e','w','e','w','n','s','n','s','e','w'}) ? std::cout << "Valid Walk" : std::cout << "Invalid Walk";
     return 0;
 }
+
+// NOTE
+// The program can be executed in lower space complexity using less variables
+// and small data types. But that was affecting the readability of the code.
+// So I kept it this way.

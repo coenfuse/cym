@@ -24,9 +24,6 @@ bool isValidWalk(std::vector<char> walk) {
         // Transforming whole list into lowercase. Important before sorting. O(N)
         std::transform(walk.begin(), walk.end(), walk.begin(), ::tolower);
 
-        // Sorting Walk path. O(logN)
-        std::sort(walk.begin(), walk.end());
-
         // Scanning walk path for invalid directions. O(N)
         // Also scanning for balanced directions. O(N)
         // There should be equal number of East and West directions.

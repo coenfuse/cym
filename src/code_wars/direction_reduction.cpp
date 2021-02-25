@@ -82,6 +82,97 @@ public:
 
         return reduced_path_stack;
     }
+
+    // Understand by this logic :
+    // Given directions are, North -> East -> South -> West
+    // Technically you are just outlining a square and your displacement is zero.
+    // But previous logic just compares adjacent directions, not overall direction.
+    // To actually give the most efficient path, one needs to count all the possib-
+    // le directional pairs, eliminate them and just return the unpaired directions
+
+    // Furthermore, The order of reduced directions doesn't matter because the res-
+    // ultant vector and displacement will be the same. That is, both paths :
+    // North -> East & East -> North will land you in the same place. North-East
+
+    // Also, the analysis can be done on the stack itself, no need to create any
+    // auxillary stack. Although it would lead to few more operations, it is space
+    // efficient.
+
+    static std::vector<std::string> LogicDirReduc(std::vector<std::string> &arr){
+
+        short N_S_Disp = 0;      // North - South pair counter. +1 when North, -1 when South
+        short W_E_Disp = 0;      // West - East pair counter. +1 when West, -1 when East
+
+        for(std::string direction : arr){
+
+            switch (direction[0])
+            {
+            case 'E':
+            case 'e': --W_E_Disp;
+                break;
+            case 'W':
+            case 'w': ++W_E_Disp;
+                break;
+            case 'N':
+            case 'n': ++N_S_Disp;
+                break;
+            case 'S':
+            case 's': --N_S_Disp;
+            default:
+                break;
+            }
+
+        }
+        
+        // If N_S_Disp is equals to :
+        // 0 then, Resultant N_S movement is 0.
+        // > 0 then, Resultant N_S movement is North.
+        // < 0 then, Resultant N_S movement is South.
+
+        // If W_E_Disp is equals to :
+        // 0 then, Resultant W_E movement is 0.
+        // > 0 then, Resultant W_E movement is West.
+        // < 0 then, Resultant W_E movement is East.
+
+        // Finally, the magnitude of both W_E_Disp & N_S_Disp can tell us the
+        // final displacement of the path, and most efficient path to it.
+        // Basically, with least number of steps.
+
+        arr.clear();
+
+        if(N_S_Disp != 0){
+
+            if(N_S_Disp > 0)
+                while(N_S_Disp != 0){
+                    arr.push_back("NORTH");
+                    N_S_Disp--;
+                }
+            else
+                while(N_S_Disp != 0){
+                    arr.push_back("SOUTH");
+                    N_S_Disp++;
+                }
+
+        }
+
+        if(W_E_Disp != 0){
+
+            if(W_E_Disp > 0)
+                while(W_E_Disp != 0){
+                    arr.push_back("WEST");
+                    W_E_Disp--;
+                }
+            else
+                while (W_E_Disp != 0){
+                    arr.push_back("EAST");
+                    W_E_Disp++;
+                }
+
+        }
+
+        return arr;
+    }
+
 };
 
 // Just for local test purposes
@@ -91,9 +182,14 @@ int main(){
     std::vector<std::string> path = {"NORTH", "WEST", "SOUTH", "EAST"};
     DirReduction OBJ;
 
-    std::vector<std::string> reduced_path = OBJ.dirReduc(path);     // Should return "west";
+    std::vector<std::string> reduced_path = OBJ.dirReduc(path);         // Returns full path.
+    std::vector<std::string> logical_path = OBJ.LogicDirReduc(path);    // Returns nothing.
     
     for(std::string direction : reduced_path)
+        std::cout << direction << " -> ";
+    std::cout << "END\n\n";
+
+    for(std::string direction : logical_path)
         std::cout << direction << " -> ";
     std::cout << "END";
 

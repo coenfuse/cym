@@ -1,3 +1,4 @@
+// UNSOLVED
 // John and Mary want to travel between a few towns A, B, C ... Mary has on a
 // sheet of paper a list of distances between these towns. ls = [50, 55, 57, 58, 60].
 // John is tired of driving and he says to Mary that he doesn't want to drive
@@ -49,7 +50,7 @@ public:
             int distance_sum = 0;
             int city_count = 0;
 
-            for(int each : list){
+            for(int each : list){                                        // Is this 0/1 Knapsack ?
                 if(city_count < max_cities){
                     distance_sum += each;
                     if(distance_sum > max_distance){
@@ -84,7 +85,7 @@ public:
         // The possible combinations of max_size = pool.size() are :
 
         // A,B,C,D,                     (4^1 = 4 pairs of Length 1)
-        // AA,AB,AC,AD,                 (4^2 = 16 pairs of Length 1)
+        // AA,AB,AC,AD,                 (4^2 = 16 pairs of Length 2)
         // BA,BB,BC,BD,
         // CA,CB,CC,CD,
         // DA,DB,DC,DD,
@@ -123,7 +124,6 @@ public:
 
         // Filling combinations
 
-
         int sum = 0;
 
         for(;;);
@@ -137,5 +137,6 @@ public:
 int main(){
     std::vector<int> distance_map = {50, 55, 56, 57, 58};
     std::cout << BestTravel::chooseBestSum(163, 3, distance_map);
+    //std::cout << BestTravel::chooseBestSumDynamic(163, 3, distance_map);
     return 0;
 }

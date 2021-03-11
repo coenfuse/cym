@@ -1,3 +1,4 @@
+// UNSOLVED
 // Consider the sequence U(n, x) = x + 2x**2 + 3x**3 + .. + nx**n where x is a 
 // real number and n a positive integer.
 // When n goes to infinity and x has a correct value (ie x is in its domain of

@@ -1,5 +1,5 @@
 // You are given two large arrays containing integers. Create an array containing
-// of the given arrays.
+// intersection of the given arrays.
 // e.g [1,2,3,4,5] /\ [4,5,6,7,8] = [4,5]
 // where '/\' referes to intersection    
 
@@ -70,7 +70,7 @@ arr_int arr_intersxn(arr_int arr_a, arr_int arr_b)
 
 int main(void)
 {
-    auto ans = arr_intersxn({1,2,3,4,5}, {1,2,3,4,5});
+    auto ans = arr_intersxn({1,2,3,4,5}, {4,5,6,7,8});
 
     for(auto item : ans)
         std::cout << item << std::endl;

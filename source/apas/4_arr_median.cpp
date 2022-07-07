@@ -12,6 +12,7 @@
 // num2 = [3,4]
 // median = (2 + 3)/2 = 2.5
 
+#include <algorithm>
 #include <iostream>
 #include <set>
 #include <vector>
@@ -22,19 +23,16 @@ double arr_median(arr_int arr_a, arr_int arr_b)
 {
     double median = 0;
     arr_int data;
-    std::set<int> tmp;
 
     // Create a unique and sorted data var that contains both array elements 
     for(auto digit : arr_a)
-        tmp.insert(digit);
+        data.push_back(digit);
 
     for(auto digit : arr_b)
-        tmp.insert(digit);
-
-    // Create an array from std::set since set isn't index accessible
-    // Could've been possibly avoided if used hash-map
-    for(auto digit : tmp)
         data.push_back(digit);
+
+    // sort the array
+    std::sort(data.begin(), data.end());
 
     // Find middle point of data. 
     // If the size of data is an even number, take the average of two middlemost
